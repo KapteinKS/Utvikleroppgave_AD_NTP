@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: auto;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  background-image: url(./assets/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-picture-image_1250295.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  padding: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+#he {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div {
+  height: 100%;
+  margin: auto;
+  width: 70%;
+  padding-top: 10px;
+  background-color: lightblue;
+  border-radius: 3em;
+}
+
+li {
+  width: auto;
+}
+
+span {
+  display: inline-block;
+  width: 5em;
+  text-align: left;
+}
+
+input[type='number'] {
+  margin: 5px;
+  width: 4em;
+}
+
+li {
+  padding-bottom: 20px;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+#alert {
+  padding: 0;
+  width: 80%;
+  vertical-align: central;
+  text-align: center;
+}
+
+  #alert div {
+    padding: 0;
+  }

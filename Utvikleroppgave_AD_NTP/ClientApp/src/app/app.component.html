@@ -1,0 +1,29 @@
+<header>
+  <h1 id="he">{{ title }}</h1>
+</header>
+<div class="container">
+
+  <div id="alert"></div>
+  <ul class="no-bullets">
+    <li *ngFor="let product of products">
+      <span>{{ product.name }}</span>
+
+      <input type="number"
+             min="0"
+             max="1000"
+             class="input-text"
+             placeholder="{{ product.amount }}"
+             (keyup.enter)="calculateDelivery(product)"
+             [(ngModel)]="product.amount" />
+      <span> {{product.unit}} </span>
+
+      <span>Priority <input type="checkbox" name="priority" [(ngModel)]="product.priority" /></span>
+
+      <button type="submit"
+              (click)="calculateDelivery(product)">
+        Estimate delivery
+      </button>
+      <p>Estimated delivery: {{ product.deliveryDate.toDateString() }}</p>
+    </li>
+  </ul>
+</div>
